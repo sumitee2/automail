@@ -12,6 +12,17 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+#============EMAIL DEFAULTS=====================
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'shifuwhite@gmail.com'
+EMAIL_HOST_PASSWORD = 'whiteFFFFFF'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+SERVER_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+#===============================================
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
